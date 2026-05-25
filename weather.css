@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#9e7ddc , #bc97d9 );
+    font-family:"poppins", serif;
+}
+
+.container{
+    width: 390px;
+    height: 550px;
+    border-radius: 10px;
+    background: linear-gradient(180deg,#1a2344 ,#8a4dad);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color:white;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.cloud img{
+    width: 150px;
+    height: 150px;
+}
+
+.weather{
+    font-size:50px;
+    font-weight: 600;
+}
+
+.forecast{
+    font-size:50px;
+    font-weight: 600;
+    color: #DDB130
+}
+
+#start-btn{
+    height:40px;
+    width: 120px;
+    border-radius: 20px;
+    background: #DDB130;
+    color:black;
+    border: none;
+    outline: none;
+}
+
+#start-btn:hover{
+    background: #f4c842;
+    transform: scale(1.01);
+    transform-origin: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.search-box{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left:10px;
+}
+
+.search-box input{
+    height: 40px;
+    width: 250px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+}
+
+.search-icon{
+    height:35px;
+   width: 25px;
+   margin-right: 20px;
+   display: flex;
+   justify-content: center;
+   border-radius: 10px;
+}
+
+.search-icon button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #DDB130;
+    color:black;
+    border-radius: 10px;
+}
+
+.search-icon button:hover{
+    background: #f4c842;
+    transform: scale(1.01);
+    transform-origin: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.description{
+    font-size: 20px;
+    font-weight: 500;
+    color: #DDB130;
+}
+
+.weather-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#temp{
+    font-size: 50px;
+    font-weight: 500;
+    font-family: arial ,helvetica, sans-serif;
+}
+
+#city-name{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: arial ,helvetica, sans-serif;
+    color: #DDB130;
+}
+
+#cloud-icon i{
+    font-size: 30px;
+    color: #DDB130;
+}
+
+.extra-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.wind, .humidity{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+#back-btn{
+    height:40px;
+    width: 120px;
+    border-radius: 20px;
+    background: #DDB130;
+    color:black;
+    border: none;
+    outline: none;
+}
+
+#back-btn:hover{
+    background: #f4c842;
+    transform: scale(1.01);
+    transform-origin: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.inactive{
+    display: none;
+}
+

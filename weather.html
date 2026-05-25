@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER APP</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1163/1163624.png" type="image/png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="container container1">
+       <div class="cloud"> <img src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png" alt="wind icon"> </div>
+        <h1 class="weather">WEATHER</h1>
+        <h2 class="forecast">FORECAST</h2>
+        <button id="start-btn">Get Started</button>
+    </div>
+
+
+    <div class="container container2 inactive">
+        <h1>Weather App</h1>
+        <div class="search-box">
+                <input type="text" id="city-input" placeholder="Enter city name"> 
+                <div class="search-icon"><button id="search-btn"> <i class="fa-solid fa-magnifying-glass"></i></button> </div>
+        </div>
+
+       <div class="description"> </div>
+    
+       <div class="weather-info">
+               <div id="cloud-icon"><i class="fa-solid fa-cloud-sun"></i></div> 
+               <h1 id="temp">0°C</h1>
+               <h3 id="city-name">City Name</h3>  </div>
+
+
+       <div class="extra-info">  
+               <div class="wind">
+                <i class="fa-solid fa-wind"></i> </div>  
+               <div class="winddata"> <p id="wind-speed">0 km/h</p>
+            <p>Wind</p></div>
+               
+               <div class="humidity">
+                <i class="fa-solid fa-tint"></i> </div>
+                <div class="humiditydata"> <p id="humidity">0%</p>
+                <p>Humidity</p></div>
+            
+       </div>
+           
+    </div>
+
+
+    <div class="container container3 inactive" id="error-container">
+             <h1>404</h1>
+                <h3>City Not Found</h3>
+                <P id="info">Please enter a valid city name.</P>
+                <button id="back-btn">Go Back</button>
+    </div>
+
+    
+    <script src="weather.js" defer></script>
+</body>
+</html>
